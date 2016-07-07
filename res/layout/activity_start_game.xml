@@ -1,0 +1,144 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/game_Panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#59a3d9"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="0sp"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:background="#00000000"
+            android:text="60"
+            android:textSize="30dp" />
+
+        <RelativeLayout
+            android:id="@+id/main_board"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.8" >
+
+            <LinearLayout
+                android:id="@+id/gameBoard_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/blocks_bg"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gameBoard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="0sp"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:text="Score : 0"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gameOver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#59a3d9"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#59a3d9"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#00000000"
+                android:text="100"
+                android:textColor="#FFFFFF"
+                android:textSize="80dp" />
+
+            <TextView
+                android:id="@+id/tv_timeup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TIME UP !"
+                android:textColor="#FF0000"
+                android:textSize="60dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button_replay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_replay" />
+
+            <Button
+                android:id="@+id/button_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_share" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_gameover_best"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="BEST"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/button_gameover_highscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:text="100"
+                android:textColor="#08385b"
+                android:textSize="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
